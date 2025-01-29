@@ -1,0 +1,432 @@
+.nav{
+    background-color:white;
+    display:flex;
+    width:100%;
+    height:90px;
+    justify-content: space-around;
+}
+.logo{
+    margin-left: 30px;
+    margin-top:10px;
+}
+.logo img{
+    width:100px;
+    height:70px;
+}
+.contact{
+    margin:30px;
+    transform: translateX(200px);
+}
+.searchbar{
+    margin:30px;
+}
+.searchbar input{
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    border: 2px solid #999;
+    
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(98, 98, 193);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .navbar a {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+    position: relative; /* Required for dropdown positioning */
+  }
+  
+  .menu-item {
+    position: relative; /* Required for dropdown to align with Hotels link */
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aligns dropdown below the anchor */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+    min-width: 250px; /* Adjust width to match the dropdown in the image */
+    padding: 0; /* Removes default padding */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aligns dropdown below the anchor */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  flex-direction: column;
+  width:fit-content;
+  padding: 0; /* Removes extra padding */
+}
+
+.dropdown a {
+  margin: 0;
+  padding: 12px 10px; /* Adjusts padding for proper alignment */
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: Arial, sans-serif; /* Matches typical dropdown font style */
+  font-size: 14px; /* Adjust font size */
+  white-space: nowrap; /* Prevents text from breaking into a new line */
+  border-bottom: 1px solid #eee; /* Adds subtle dividers between items */
+}
+
+.dropdown a:last-child {
+  border-bottom: none; /* Removes the divider from the last item */
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+}
+
+.menu-item {
+  position: relative; /* Ensures the dropdown is positioned relative to the parent */
+}
+
+.menu-item:hover .dropdown {
+  display: flex; /* Shows dropdown on hover */
+  flex-direction: column; /* Ensures vertical alignment */
+}
+
+
+  
+  .btn {
+    margin-left:150px; /* Pushes buttons to the right */
+  }
+  
+  .btn button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+  }
+  .hotel{
+    width:100%;
+    Height:500px;
+    display: inline-block;
+    background-image: url('pic1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+  }
+  .hotel-des{
+    width:40%;
+    margin-top:100px;
+    margin-left:200px;
+    transform: translate(500px);
+    padding:10px;
+    height:140px;
+    background-color:rgb(98, 98, 193);
+  }
+  .price{
+    background-color: rgb(12, 68, 132);
+    width:200px;
+    text-align: center;
+    padding: 2px;
+    margin-left:200px;
+    transform: translate(500px);
+    margin-top:20px;
+  }
+  .book-trip {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 10px solid black;
+}
+.triplabel{
+  position:absolute;
+  color:white;
+  background-color:black ;
+  border-radius: 10px;
+  width:fit-content;
+  margin-top:20px;
+  margin-left:100px;
+  transform: translateX(120px);
+  padding:5px 15px 5px 15px;
+  z-index:1;
+
+}
+
+.book-trip form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   
+}
+
+.book-trip form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.book-trip form label {
+    font-size: 20px;
+    color: #333;
+}
+
+.book-trip form input,
+.book-trip form select,
+.book-trip form button {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-trip form button {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+.book-trip form button:hover {
+    background-color: #0056b3;
+}
+.hotel-gallery{
+  display: inline-block;
+  width:100%;
+  height:620px;
+  margin:auto;
+  background-color: rgba(218, 208, 208, 0.685);
+}
+.hotel-gallery h2{
+     margin-left:200px;
+}
+.hotelspics{
+  display:flex;
+  place-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+.pic1{
+  background-image: url('pic2.jpg');
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+  margin-right: 30px;
+
+}
+.pic1 div{
+  background-color: white;
+  /*transform: translateY(145px);*/
+  margin-top:150px;
+  padding-top:10px;
+  padding-left:5px;
+  padding-bottom: 5px;
+
+}
+.pic1 span{
+  margin-left: 130px;
+  background-color: #0056b3;
+  border-radius: 5px;
+  padding:8px;
+}
+.pic2{
+  background-image: url('pic3.jpg');
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+  margin-right: 30px;
+
+}
+.pic2 div{
+  background-color: white;
+  margin-top:150px;
+  padding-top:10px;
+  padding-left:5px;
+  padding-bottom: 5px;
+
+}
+.pic2 span{
+  margin-left: 170px;
+  background-color: #0056b3;
+  border-radius: 5px;
+  padding:8px;
+}
+.pic3{
+  background-image: url('pic4.jpg');
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+  
+
+}
+.pic3 div{
+  background-color: white;
+  margin-top:150px;
+  padding-top:10px;
+  padding-left:5px;
+  padding-bottom: 5px;
+
+}
+.pic3 span{
+  margin-left: 150px;
+  background-color: #0056b3;
+  border-radius: 5px;
+  padding:8px;
+}
+.deals{
+  display: flex;
+  place-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.deal1{
+  background-image: url('pic5.jpeg');
+  background-size: cover;
+  width: 500px;
+  height: 200px;
+  margin-right: 100px;
+
+}
+.deal2{
+  background-image: url('pic6.jpeg');
+  background-size: cover;
+  width: 500px;
+  height: 200px;
+
+}
+.breadcrumb {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.breadcrumb-separator {
+  margin: 0 10px;
+  color: #999;
+}
+
+.breadcrumb-description {
+  color: #777;
+}
+.footer {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color:#555;
+  border-top: 1px solid #ddd;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #555;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+form button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  color: #999;
+  margin-top: -30px;
+  margin-left:20px;
+}
