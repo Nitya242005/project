@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>BookMyTrip</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="pic-logo.jpeg" alt="logo">
+        </div>
+        <div class="contact">
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <p style="display: inline;">Call 24/7 Support <br>+91(44)1234 5678
+            </p>
+        </div>
+         <div class="searchbar">
+            <input type="text" placeholder="Search entire website">
+            <i class="fa-solid fa-magnifying-glass" style="color: #d7d9e0; transform: translateX(-25px);"></i>
+         </div>
+    </div>
+    <div class="navbar">
+        <div class="menu-item">
+          <a href="#" class="hotels-link">Hotels</a>
+          <div class="dropdown">
+            <a href="#">Hotels in India</a>
+            <a href="#">International Hotels</a>
+            <a href="#">International Hostels</a>
+            <a href="#">Popular Hotels in Asia</a>
+            <a href="#">Popular Hotels in Europe</a>
+            <a href="#">Activities</a>
+            <a href="#">Hotel Deals of the Week</a>
+          </div>
+        </div>
+        <a href="#">Flights</a>
+        <a href="#">Vacations</a>
+        <a href="#">Hot Deals</a>
+        <a href="#">Travel guides</a>
+        <a href="#">Blogs</a>
+        <div class="btn">
+          <button>SignUp</button>
+          <button>My Account</button>
+        </div>
+    </div>
+    <div class="hotel">
+        <div class="hotel-des">
+            <h1>Paris Hilton Hotel,Mumbai,India</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse sed quae aut laudantium sunt, ab aliquam dignissimos molestias. Dignissimos magnam ratione error quam vel, provident unde debitis repellat harum?</p>
+        </div>
+        <div class="price">
+            <p><b>$ 1200</b> <small>Inclusive of food,dinner</small>
+            </p>
+        </div>
+        <div class="triplabel">
+            <b>Book Your Trip</b>
+        </div>
+        <div class="book-trip">
+            
+            <form>
+                <div>
+                    <label for="what"><strong>What?</strong></label>
+                    <select id="what">
+                        <option>Hotel</option>
+                        <option>Flight</option>
+                        <option>Car Rental</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="where"><strong>Where?</strong></label>
+                    <select id="where">
+                        <option>India</option>
+                        <option>Australia</option>
+                        <option>Switzerland</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="when"><strong>When?</strong></label>
+                    <input type="date" id="when">
+                </div>
+                <div>
+                    <label for="who"><strong>Who</strong></label>
+                    <input type="number" id="who" placeholder="Rooms">
+                </div>
+                <div>
+                    <br>
+                    <input type="number" id="who" placeholder="Adults">
+                </div>
+                <div>
+                    <br>
+                    <input type="number" id="who" placeholder="Children">
+                </div>
+                    
+                <button type="submit">SEARCH</button>
+            </form>
+        </div>
+        
+    </div>
+    <div class="hotel-gallery">
+        <h2>Popular Hotels</h2>
+        <div class="hotelspics">
+            <div class="pic1">
+            <div>
+                <p style="font-size: 20px; color:rgba(18, 18, 224, 0.658);display:inline;"><b>Hotel Taj Mahal</b></p>
+                <span>$ 2000</span>
+                <p style="display: inline;" >Mumbai,India</p>
+            </div>
+            </div>
+            
+            <div class="pic2">
+                <div>
+                    <p style="font-size: 20px; color:rgba(18, 18, 224, 0.658);display:inline;"><b>Mont Blanc</b></p>
+                    <span>$ 3200</span>
+                    <p style="display: inline;">Zurich,Switzerland</p>
+                </div>
+            </div>
+            <div class="pic3">
+                <div>
+                    <p style="font-size: 20px; color:rgba(18, 18, 224, 0.658);display:inline;"><b>Hotel Marriot</b></p>
+                    <span>$ 1200</span>
+                    <p style="display: inline;">Melbourne ,Australia</p>
+                </div>
+            </div>
+        </div>
+        <h2>Hot Deals</h2>
+        <div class="deals">
+            <div class="deal1"></div>
+            <div class="deal2"></div>
+        </div>
+        <div class="breadcrumb">
+            <span class="breadcrumb-title">Latest Blogs</span>
+            <span class="breadcrumb-separator"> > </span>
+            <span class="breadcrumb-description">Best places to visit in India</span>
+        </div>
+        <footer class="footer">
+            <div class="footer-section">
+                <h4 style="color:gray;">Company</h4>
+                <ul>
+                    <li><a href="#">About the company</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 style="color:gray;">Customer Support</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 style="color:gray;">Follow us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 style="color:gray;">Don't miss our deals and offers</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+        </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2013, All rights reserved</p>
+        </div>
+        
+       
+    </div>
+          
+</body>
+</html>
